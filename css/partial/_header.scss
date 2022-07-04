@@ -1,0 +1,160 @@
+.header {
+    width: 100%;
+    font-size: 1rem;
+    position: sticky;
+    font-family: 'Rubik', sans-serif;
+    .main-header__promotion{
+        height: 38px;
+        text-align: center;
+        justify-content: center;
+    }
+    .navBar {
+        background-color: #fff;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        & div {
+            display: flex;
+            align-items: center;
+        }
+        &__logo{
+            color: black;
+            font-size: 1.3em;
+            padding: 0;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        &__menu {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            color: black;
+            font-weight: 500;
+            margin-bottom: 0rem;
+            & li {
+                margin: 0 .4em;
+                position: relative;
+            }
+            & li a {
+                text-decoration: none;
+                color: black;
+                font-size: 1em;
+                padding: 1em;
+                display: block;
+
+                &:hover,
+                &:focus {
+                    background-color: gainsboro;
+                }
+            }
+            & li ul {
+                left: 0;
+                top: 50px;
+                padding: .3em 0;
+                text-align: left;
+                display: none;
+                min-width: 200px;
+                position: absolute;
+                background-color: #fff;
+                z-index: 50;
+                & li {
+                    list-style: none;
+                    padding: 0;
+                    border-radius: 0;
+                    margin: 0;
+                    & a {
+                        font-size: .9em;
+                        font-weight: 400;
+                        margin:  0;
+                        padding: .7em 1em;
+                        &:hover,
+                        &:focus {
+                            background-color: gainsboro;
+                        }
+                    }
+                }
+            }
+            & li:hover {
+                ul {
+                    display: block;
+                }
+            }
+
+            &__btnCartMenu {
+                color: black;
+                padding: .8em 1.1em;
+                margin: 0;
+                cursor: pointer;
+                text-align: center;
+                position: relative;
+                i {
+                    font-size: 1.4em;
+                    vertical-align: bottom;
+                    padding: 0;
+
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+                &-counter {
+                    position: absolute;
+                    top: 6px;
+                    right: 0px;
+                    border-radius: 50%;
+                    color: black;
+                    font-weight: bold;
+                    font-size: .9em;
+                    width: 16px;
+                    text-align: center;
+                    padding: 1px;
+                }
+            }
+            &.show {
+                top: 50px;
+            }
+        }
+        &__btnCartResponsive {
+            color: black;
+            padding: .9em 1.2em;
+            margin: 0;
+            margin-right: 3em;
+            cursor: pointer;
+            text-align: center;
+            position: relative;
+            display: none;
+            i {
+                font-size: 1.5em;
+                vertical-align: bottom;
+                padding: 0;
+            }
+            &:hover {
+                background-color: #fff;
+            }
+            &-counter {
+                position: absolute;
+                top: 6px;
+                right: -1px;
+                border-radius: 50%;
+                color: black;
+                font-weight: bold;
+                font-size: .9em;
+                width: 16px;
+                text-align: center;
+                padding: 1px;
+            }
+        }
+        #NEWIN{
+            text-decoration: none; 
+            color:#000000;
+            padding: 20px;
+        }
+    }
+    .btn__nav {
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
+        display: none;
+
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -15,14 +15,117 @@
 </head>
 
 <body>
-    <header>
-        <h2>Clon Como Quieres</h2>
+    <header class="header">
+        <div class="separador">
+            <div class="main-header__promotion main-header-promotion"
+                style="background-color: #000000; color: #ffffff; z-index:3;">
+                <span class="promo activo"><b> COLLECTION I <a href="/categorias/winter-22" 
+                    style="color:white;text-decoration:underline!important;">Comprar</a></b>
+                </span>
+            </div>
+        </div>
+        <div class="navBar">
+            <div>
+                <span class="btn__nav">
+                    <i class="fas fa-solid fa-bars"></i>
+                </span>
+                <a class="navBar__logo" href="#">COMO QUIERES</a>
+            </div>
+            <ul class="navBar__menu">
+                <a id="NEWIN" href="#">NEW IN</a>
+                <li>
+                    <a href="#" id="btnNavProductos">COLLECTION</a>
+                    <div>
+                        <ul class="products-subcategory">
+                            <h6 class="subcategory bold-font top-subcategory">
+                                <a href="/categorias/top">Prendas</a>
+                            </h6>
+                            <li><a href="/categorias/camperas">Camperas</a></li>
+                            <li><a href="/categorias/pantalones">Pantalones &amp; Leggings</a></li>
+                            <li><a href="/categorias/vestidos-enteritos">Vestidos &amp; Enteritos</a></li>
+                            <li><a href="/categorias/buzosysweaters">Buzos &amp; Sweaters</a></li>
+                            <li><a href="/categorias/underwear">Underwear</a></li>
+                            <li><a href="/categorias/shorts-polleras">Shorts &amp; Polleras</a></li>
+                            <li><a href="/categorias/chalecos">Chalecos</a></li>
+                            <li><a href="/categorias/remeras">Remeras</a></li>
+                            <li><a href="/categorias/camisas-y-tops">Camisas &amp; Tops</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="btnNavProductos">OUTLET⚡</a>
+                    <div class="content-category">
+                        <ul class="products-subcategory">
+                            <h6 class="subcategory bold-font top-subcategory">
+                                <a href="/categorias/prendas-outlet">PRENDAS</a>
+                            </h6>
+                            <li><a href="/categorias/camperas-outlet">Camperas</a> </li>
+                            <li><a href="/categorias/buzos-sweaters-outlet">Buzos &amp;Sweaters</a></li>
+                            <li><a href="/categorias/vestidos-enteritos-outlet">Vestidos &amp;Enteritos</a></li>
+                            <li><a href="/categorias/pantalones-outlet">Pantalones &amp;Leggings</a></li>
+                            <li><a href="/categorias/trajes-de-bano-outlet">Trajes de baño</a></li>
+                            <li><a href="/categorias/remeras-outlet-1">Remeras</a></li>
+                            <li><a href="/categorias/camisas-tops-outlet">Camisas &amp; Tops</a></li>
+                            <li><a href="/categorias/shorts-polleras-outlet">Shorts &amp;Polleras</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a id="NEWIN" href="#">LOCALES</a>
+                
+            </ul>
+            <div class="navBar__menu">
+                <li class="navBar__menu__btnCartMenu" id="btnCartView">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="navBar__menu__btnCartMenu-counter"></span>
+                </li>
+                <li class="navBar__menu__btnCartMenu" id="btnCartView">
+                    <i class="fa-solid fa-user"></i>
+                    <span class="navBar__menu__btnCartMenu-counter"></span>
+                </li>
+                <li class="navBar__menu__btnCartMenu" id="btnCartView">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span class="navBar__menu__btnCartMenu-counter"></span>
+                </li>
+            </div>
+            <span class="navBar__btnCartResponsive">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span class="navBar__btnCartResponsive">
+                <i class="fa-thin fa-user"></i>
+            </span>
+            <span class="navBar__btnCartResponsive">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <div id="carouselExampleIndicators" class="home carousel slide" data-bs-ride="true">
+            <div class="home__container carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            </div>
+            <div class="home__container carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./public/img/caro.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./public/img/caro.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

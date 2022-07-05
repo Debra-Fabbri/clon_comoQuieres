@@ -2,3 +2,18 @@
     overflow: hidden;
     
 }
+
+.module-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 100%;
+}
+
+.imgcategory{
+    width: 500px;
+}

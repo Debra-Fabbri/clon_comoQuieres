@@ -145,3 +145,86 @@
 
 .imgcategory {
   width: 500px; }
+
+.contHo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: ". imA imB imC imD .";
+  margin-bottom: 50px;
+  cursor: pointer; }
+  @media (max-width: 769px) {
+    .contHo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas: ". . . ." ". imA imB ." ". imC imD ." ". . . ."; } }
+
+.imA {
+  grid-area: imA;
+  justify-self: center;
+  padding: 10px; }
+
+.imB {
+  grid-area: imB;
+  justify-self: center;
+  padding: 10px; }
+
+.imC {
+  grid-area: imC;
+  justify-self: center;
+  padding: 10px; }
+
+.imD {
+  grid-area: imD;
+  justify-self: center;
+  padding: 10px; }
+
+.insta-image {
+  width: 350px;
+  height: 370px; }
+
+@media (min-width: 991px) {
+  .info {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 370px;
+    background-color: rgba(252, 252, 252, 0.651);
+    text-align: center;
+    color: black; }
+  .descripcion {
+    background-color: transparent;
+    padding: 1rem;
+    border: none; } }
+
+@media (min-width: 769px) {
+  .info {
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 370px;
+    background-color: rgba(252, 252, 252, 0.651);
+    opacity: 0; }
+  .imagen:hover .info {
+    opacity: 1; }
+  .imagen:hover .descripcion {
+    background-color: transparent;
+    margin-top: 75px;
+    border: none; }
+  .descripcion {
+    background-color: transparent;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    border: none; } }
+
+@media (max-width: 330px) {
+  .info {
+    margin-left: 25px;
+    margin-right: 10px;
+    width: 300px; }
+  .descripcion {
+    padding: 1.5rem; } }

@@ -316,24 +316,23 @@
         <div class="module-container">
             <!-- Newsletter -->
             <div class="news-lettter-div col-md-12 col-sm-12 col xs-12" style="padding: 0px; width:100%;">
-                <div class="titulo-newsletter text-center" style="margin-top:20px">
+                <div class="titulo-newsletter text-center" style="margin-top:20px; margin-bottom:30px">
                     Formá parte de los #CQLOVERS!
                 </div>
                 <!-- DESKTOP INPUT -->
                 <div class="col-md-12 col-lg-12" style="display:flex; align-items:center; justify-content:center;">
-                    <form class="simple_form js-newsletter-form text-center" data-remote="true" novalidate="novalidate"
-                        id="new_newsletter_user" action="/newsletter_users" accept-charset="UTF-8" method="post">
-                        <div class="col-md-12 display-flex">
-                            <div class="input-newsletter-new">
-                                <div style="width:500px" class="form-group email required newsletter_user_email"><input
-                                        class="string email required newsletter-placeholder-input form-control"
-                                        placeholder="Ingresá tu email para recibir descuentos y novedades!" type="email"
-                                        name="newsletter_user[email]" id="newsletter_user_email"></div>
-                            </div>
-                            <div class="flecha-button-new">
-                                <img style="filter: invert(100%) sepia(100%) saturate(7500%) hue-rotate(210deg) brightness(88%) contrast(115%);"
-                                    src="https://www.comoquieres.com.ar/assets/comoquieres/web20/footer/flecha-input-3a3e55f4c420998b419f512fe79eabf7e548e46482103865d1b7a727d73d3d4a.svg"
-                                    alt="Flecha input 3a3e55f4c420998b419f512fe79eabf7e548e46482103865d1b7a727d73d3d4a">
+                    <form class="simple_form text-center" data-remote="true" novalidate="novalidate">
+                        <div class="col-md-12" style="display: flex;">
+                            <div class="input-newsletter-new" style="display: flex; align-items: center;">
+                                <div style="width:500px" class="form-group email required newsletter_user_email">
+                                    <input class="email newsletter-placeholder-input "
+                                        placeholder="Ingresá tu email para recibir descuentos y novedades!" type="email">
+                                </div>
+                                <div class="flecha-button-new">
+                                    <img style="filter: invert(100%) sepia(100%) saturate(7500%) hue-rotate(210deg) brightness(88%) contrast(115%);"
+                                        src="https://www.comoquieres.com.ar/assets/comoquieres/web20/footer/flecha-input-3a3e55f4c420998b419f512fe79eabf7e548e46482103865d1b7a727d73d3d4a.svg"
+                                        alt="Flecha input 3a3e55f4c420998b419f512fe79eabf7e548e46482103865d1b7a727d73d3d4a">
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -341,9 +340,9 @@
             </div>
             <!-- Ayuda, Contacto y Nosotros -->
             <div class="col-md-12 col-sm-12 col-xs-12 text-initial pt60 pb40 footer-mobile"
-                style="margin-left:auto; margin-right:auto; padding:232px">
+                style="padding:90px">
                 <!-- Listas desktop -->
-                <div class="col-md-12 hidden-sm hidden-xs">
+                <div class="col-md-12 contenedor hidden-sm hidden-xs">
                     <!-- Ayuda -->
                     <div class="col-md-4">
                         <p class="footer-statics-desk h-regular text-center"
@@ -411,6 +410,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="titulo-newsletter text-center" style="margin-top:40px; margin-bottom:30px;">
+            Esta página es un clon para fines prácticos y no lleva a ninguna página oficial. TODOS LOS DERECHOS RESERVADOS
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

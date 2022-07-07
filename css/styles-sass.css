@@ -186,6 +186,10 @@
   width: 350px;
   height: 370px; }
 
+.imge {
+  width: 350px;
+  height: 550px; }
+
 @media (min-width: 991px) {
   .info {
     position: absolute;
@@ -195,6 +199,14 @@
     background-color: rgba(252, 252, 252, 0.651);
     text-align: center;
     color: black; }
+    .info__aca {
+      position: absolute;
+      overflow: hidden;
+      width: 350px;
+      height: 550px;
+      background-color: rgba(252, 252, 252, 0.651);
+      text-align: center;
+      color: black; }
   .descripcion {
     background-color: transparent;
     padding: 1rem;
@@ -208,8 +220,17 @@
     height: 370px;
     background-color: rgba(252, 252, 252, 0.651);
     opacity: 0; }
+    .info__aca {
+      position: absolute;
+      overflow: hidden;
+      width: 350px;
+      height: 550px;
+      background-color: rgba(252, 252, 252, 0.651);
+      opacity: 0; }
   .imagen:hover .info {
     opacity: 1; }
+    .imagen:hover .info__aca {
+      opacity: 1; }
   .imagen:hover .descripcion {
     background-color: transparent;
     margin-top: 75px;

@@ -66,9 +66,14 @@
 	height: 370px;
 }
 
+.imge {
+	width: 350px;
+	height: 550px;
+}
+
 
 @media(min-width: 991px){
-	.info{
+	.info {
 		position: absolute;
 		overflow: hidden;
 		width: 350px;
@@ -76,6 +81,15 @@
 		background-color: hsla(0, 0%, 99%, 0.651);
 		text-align: center;
 		color: black;
+		&__aca{
+			position: absolute;
+			overflow: hidden;
+			width: 350px;
+			height: 550px;
+			background-color: hsla(0, 0%, 99%, 0.651);
+			text-align: center;
+			color: black;
+		}
 	}
 	.descripcion{
         background-color: transparent;
@@ -93,12 +107,23 @@
 		height: 370px;
 		background-color: hsla(0, 0%, 99%, 0.651);
 		opacity: 0;
+		&__aca{
+			position: absolute;
+			overflow: hidden;
+			width: 350px;
+			height: 550px;
+			background-color: hsla(0, 0%, 99%, 0.651);
+			opacity: 0;
+		}
 	}
 	
 	.imagen {
 		&:hover {
 			.info {
 				opacity: 1;
+				&__aca{
+					opacity: 1;
+				}
 			}
 			.descripcion {
                 background-color: transparent;

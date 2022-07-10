@@ -130,6 +130,8 @@
     color: black;
     cursor: pointer;
     display: none; }
+  .header .promo {
+    color: #fff; }
 
 .home {
   overflow: hidden; }
@@ -310,3 +312,6 @@
 
 .item__image {
   width: 350px; }
+
+span {
+  color: #F3A7DD; }

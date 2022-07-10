@@ -307,3 +307,6 @@
   a {
     text-decoration: none;
     color: #7b7b7b; } }
+
+.item__image {
+  width: 350px; }
